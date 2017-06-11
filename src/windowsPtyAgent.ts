@@ -6,8 +6,7 @@
 import * as net from 'net';
 import * as path from 'path';
 import { ArgvOrCommandLine } from './types';
-
-const pty = require(path.join('..', 'build', 'Release', 'pty.node'));
+import pty from 'pty-node-prebuild';
 
 /**
  * Agent. Internal class.

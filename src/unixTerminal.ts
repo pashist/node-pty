@@ -10,8 +10,7 @@ import { Terminal } from './terminal';
 import { ProcessEnv, IPtyForkOptions, IPtyOpenOptions } from './interfaces';
 import { ArgvOrCommandLine } from './types';
 import { assign } from './utils';
-
-const pty = require(path.join('..', 'build', 'Release', 'pty.node'));
+import pty from 'pty-node-prebuild';
 
 const DEFAULT_FILE = 'sh';
 const DEFAULT_NAME = 'xterm';
